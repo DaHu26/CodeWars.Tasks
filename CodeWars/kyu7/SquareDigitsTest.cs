@@ -21,8 +21,8 @@ namespace CodeWars.SquareDigitsTest
                 listInt.Add(square);
             }
 
-            var stringResult = String.Join("", listInt);
-            var result = int.Parse(String.Join("", stringResult.Where(x => char.IsDigit(x))));
+            var stringResult = string.Join("", listInt);
+            var result = int.Parse(string.Join(string.Empty, stringResult));
 
             return result;
         }

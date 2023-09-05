@@ -12,18 +12,15 @@ namespace CodeWars.SolveTest
     public static class Kata
     {
         public static int Solve(List<int> arr)
-        {
+        { 
             var groupsArr = arr.GroupBy(x  => Math.Abs(x));
 
             foreach (var group in groupsArr)
             {
-                var maxValue = group.Max();
-                var minValue = group.Min();
-                if (maxValue == minValue)
-                    return minValue;
+                if (group.Min() == group.Max())
+                    return group.Max();
             }
             return 0;
-
         }
     }
 

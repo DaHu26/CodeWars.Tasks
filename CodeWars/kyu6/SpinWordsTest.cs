@@ -24,7 +24,7 @@ namespace CodeWars.SpinWordsTest
                 listWords.Add(result);
             }
 
-            var i = String.Join(" ", listWords);
+            var i = string.Join(" ", listWords);
 
             return i;
         }
